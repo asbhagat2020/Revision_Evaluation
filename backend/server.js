@@ -10,6 +10,10 @@ dotenv.config();
 
 const app = express();
 
+app.get("/", (req, res)=>{
+    res.send("this is the home route");
+})
+
 app.use(bodyParser.json());
 connectDB();
 
